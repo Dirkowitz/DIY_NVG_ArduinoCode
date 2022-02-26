@@ -12,5 +12,17 @@ Welcome to the DIY_NVG_ArduinoCode wiki!
 > * TJpg_Decoder: https://github.com/Bodmer/TJpg_Decoder
 > * JPEGDecoder: https://github.com/Bodmer/JPEGDecoder
 
-5. If you want to change between left or right side you have to change in the code (file DIY_NVG.ino) in line 89 tft.setRotation(2); to  tft.setRotation(0);
+5. You have to change the in the folder "libraries\TFT_eSPI-master" the file User_Setup.h 
+6. The Display have the follwing connections then after the exchange
+>*Display --  ESP32
+>*VCC --  3.3V
+>*GND --  GND
+>*DIN --  IO13
+>*CLK --  IO14
+>*CS --  IO15
+>*DC --  IO2
+>*RST --  IO16
+
+
+7. If you want to change between left or right side you have to change in the code (file DIY_NVG.ino) in line 89 tft.setRotation(2); to  tft.setRotation(0);
 
